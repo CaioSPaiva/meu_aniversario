@@ -5,9 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Aniversário</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="images/logotipo-do-aniversario.png" alt="Logotipo do aniversário de 29 anos">
+            <h2 class="hero__titulo">
+                <i>Você é meu convidado especial!</i>
+            </h2>
+            <p class="hero__text">
+                Este ano, quero celebrar meu aniversário ao lado de pessoas queridas, e a festa não será a mesma sem você! Prepare-se para uma noite cheia de diversão, música e muitas surpresas. Vamos fazer dessa data uma lembrança incrível! Marque no calendário e venha celebrar comigo. <br>
+                <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Chácara Grajaú, São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data</b>
+                        19/12/2024 às 18hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirmar presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--party">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre a festa</h2>
+                <p class="event__details__description">
+                    Estamos prontos para celebrar um momento especial e queremos você conosco! Prepare-se para uma festa inesquecível, repleta de diversão, boas companhias e muitas surpresas. Junte-se a nós para comemorar em grande estilo!
+                </p>
+            </div>
+            <img class="event__image" src="images/sobre_festa.png" alt="wallpaper de uma festa">
+        </div>
+    </section>
+
+    <section class="event event--foods event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas e Bebidas</h2>
+                <p class="event__details__description">
+                    Venha com apetite! Teremos uma seleção deliciosa de pratos, petiscos e bebidas para todos os gostos. De entradas saborosas a sobremesas irresistíveis, você vai encontrar uma experiência gastronômica para aproveitar enquanto celebra.
+                </p>
+            </div>
+            <img class="event__image" src="images/comidas_bebidas.png" alt="mesa de comidas em aniversario">
+        </div>
+    </section>
+
+    <section class="event event--music">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Música</h2>
+                <p class="event__details__description">
+                    A animação estará garantida com uma trilha sonora incrível e atrações que vão fazer todo mundo querer dançar! DJ, pista de dança e momentos especiais esperam por você para tornar a festa ainda mais divertida
+                </p>
+            </div>
+            <img class="event__image" src="images/musica_entretenimento.png" alt="Publico em festa com DJ">
+        </div>
+    </section>
+
+    <section class="event event--kids event--image-left"  data-aos="fade-left">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Espaço Kids</h2>
+                <p class="event__details__description">
+                    Pensamos em tudo para que os pequenos também aproveitem! No Espaço Kids, as crianças terão atividades divertidas, brinquedos e a supervisão necessária para que possam brincar com segurança e se divertir tanto quanto os adultos.
+                </p>
+            </div>
+            <img class="event__image" src="images/espaço_kids.png" alt="foto de esapço destinado para crianças">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
